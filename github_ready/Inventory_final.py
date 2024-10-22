@@ -25,7 +25,7 @@ class InventoryManager:
                 result = func(*args, **kwargs)
                 return result
             except Exception as e:
-                print(f"Database error occurred: {e}")
+                print(f"General error occurred: {e}")
                 return False
             except MySQL_Error.ProgrammingError as e:
                 # Raised if there is a syntax error in the SQL query
