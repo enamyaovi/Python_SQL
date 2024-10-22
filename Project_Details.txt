@@ -1,0 +1,86 @@
+Inventory Management System for a Local Store 
+
+Project Overview:
+Build a Local Store Inventory Management System using Python and MySQL that helps store owners track products, manage stock levels, and keep the business running efficiently. In this project, you will work with core programming concepts such as data structures, algorithms, control flow, functions, OOP, and database integration to develop a solution.
+The solution will be terminal-based, with a focus on code efficiency and logical workflows.
+
+Scenario:
+You are hired to build a simple inventory management system for a local store. The store sells various products, and the owner wants a system to:
+Add products to the inventory.
+Track stock levels.
+Update product details and stock quantities.
+Generate low-stock alerts to prevent running out of essential products.
+Search and sort products by name, category, or stock quantity.
+
+Project Requirements:
+Features:
+Add a New Product:
+Store the product name, category (e.g., electronics, groceries), stock quantity, and price.
+View All Products:
+Display a table of all products with their details.
+Update Product Details:
+Update the product's name, category, or price.
+Restock products by updating the quantity.
+Delete a Product:
+Remove a product from the inventory.
+Low-Stock Alert:
+Generate alerts for products with stock below a specified threshold (e.g., stock < 5).
+Search and Sort Products:
+Search products by name or category.
+Sort products by price or stock quantity.
+Deliverables:
+Python Code:
+A complete Python script implementing all the features.
+Proper docstrings and comments for readability.
+Database Schema:
+MySQL database setup with a products table.
+README File:
+A guide on how to set up and run the project, including:
+Steps to connect to MySQL.
+How to create the database and table.
+Example commands to test the system.
+
+Bonus Challenges:
+Add export functionality to generate a CSV report of the inventory.
+Implement error handling for invalid inputs.
+Add a unit test suite to test key functions.
+Happy Coding!
+
+============================================================================================================
+//Breaking Down the problem
+Creating a Database Using Python Script(mysql.connector)
+Also create tables as wanted
+Module with functions for the following queries:
+Add a new product [def add_product()]
+view/ display all products [def display_product()]
+Update product details(Name, Category, Price, Quantity/Restocking) 
+[def update_details(*args, **kwargs): name, category, price, quantity]
+Delete products from inventory [def delete(): product_id]
+Low stock alert [def stock_alert(): quantity<5]
+Search and Sorting products [def search(**kwargs): name, category | def sort(**kwargs): price, quantity]
+By name or category: Search
+By price or quantity: sort
+
+========================================================================================================================
+Class IMSL:
+	def __init__(self, mysql.connector, mysql.connector.cursor) -> None:
+			"""
+This init method creates a base class
+"""
+		self.connector = mysql.connector.connect()
+		self.cursor = mysql.connector.connect.cursor()
+		
+	def connect_database() ->bool:
+		
+	def add_product(self, *args, **kwargs) -> Bool:
+		pass
+	def display_products(self, *args, **kwargs) -> dict[str, float]:
+		pass
+	def update_details (self, *args, **kwargs) -> Bool:
+		pass
+	def stock_alert(self, *args, **kwargs) -> str:
+		pass
+	def search(self, *args, **kwargs) -> tuple[str]:
+		pass
+	def sort(self, *args, **kwargs) -> ??:
+		pass
