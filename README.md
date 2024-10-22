@@ -135,7 +135,7 @@ Below is an explanation of its key components and logic.
     Depending on the user's choice, it triggers corresponding methods from the InventoryManager class to manage inventory operations.
     Options:
 
-    Create Database: Initializes a new database for inventory management.
+    Connect Database: Connects to an existing Database, myShop for inventory management.
     Create Table: Creates a products table with fields like product name, category, price, and quantity.
     Add Product: Collects product details from the user and inserts them into the table.
     Update Product Quantity: Updates the quantity of a product based on the product ID.
