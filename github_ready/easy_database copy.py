@@ -8,7 +8,7 @@ import mysql.connector.errors as cnx_err
 config = {
         'user':'root',
         'host':'localhost',
-        'password':'s8ntYa0v3!m@om'
+        'password':'somepassword'
             }
 
 
